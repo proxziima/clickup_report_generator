@@ -11,10 +11,13 @@ Big thanks for [Anwari Ilman](https://github.com/anwari666), the first to solve 
 
 ## Installation & running
 
-1. Clone the repository: `git clone https://github.com/anwari666/clickup-timesheet-generator.git`
+1. Clone this repository: `git clone https://github.com/queirozvinicius/clickup_report_generator.git`
 2. Install the requirements: `pip install -r requirements.txt`
-3. Rename the `example.env` to `.env`
-4. Grab your Clickup API key by going to Settings > Apps and then click Generate. Put it inside the `.env`
+3. Change the keys in the `.env` file
 5. Run the script: `python generate-report.py`
 
-Tested on Mac. Not 100% sure if it's working on Windows...
+Tested on Linux (LTS 20.04) and Windows.
+
+## Know issues
+
+1. I have some problems running directly on my work network. Apparently the network proxy is causing some permission blocks, returning me a 443 error.
