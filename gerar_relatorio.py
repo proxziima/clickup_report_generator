@@ -55,7 +55,7 @@ def main():
     # lê os apontamentos pelo API
     try:
         session = requests.session()
-        r = session.get(api_time_entries, headers=headers, verify=False)
+        r = session.get(api_time_entries, headers=headers)
     except Exception as e:
         print(f"Erro ao ler os apontamentos. Erro:{e}")
     
@@ -115,7 +115,7 @@ def main():
     for task_id in tasks.keys():
         print(f"> {str(i+1).rjust(3)}/{len(tasks)} | Buscando info sobre a tarefa {task_id}: {tasks[task_id]}")
 
-        t = requests.get(f"{api_task}{task_id}", headers=headers, verify=False)
+        t = requests.get(f"{api_task}{task_id}", headers=headers)
         tasks[task_id] = t.json()
 
         i += 1
@@ -208,7 +208,7 @@ def get_team_members():
 
     try:
         session = requests.session()
-        r = session.get(api_team,verify= False ,headers=headers)
+        r = session.get(api_team,headers=headers)
     
     except Exception as e:
         print(f'Erro ao requisitar dados ao Clickup {e}')

@@ -12,9 +12,9 @@ Big thanks for [Anwari Ilman](https://github.com/anwari666), the first to solve 
 ## Installation & running
 
 1. Clone this repository: `git clone https://github.com/queirozvinicius/clickup_report_generator.git`
-2. Install the requirements: `pip install -r requirements.txt`
+2. Install the requirements: `pip3 install -r requirements.txt`
 3. Change the keys in the `.env` file
-5. Run the script: `python generate-report.py`
+5. Run the script: `python3 gerar_relatorio.py`
 
 Tested on Linux (LTS 20.04) and Windows.
 
